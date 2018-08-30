@@ -55,6 +55,9 @@ class Menu extends Component<PropType> {
     return (
       <ul className={classnames(styles.menu, className)}>
         {linkNodes}
+        <button className={styles.widgetButton} onClick={() => {
+          window.widget.toggleWidget();
+        }} >SUBSCRIBE</button>
       </ul>
     );
   }
